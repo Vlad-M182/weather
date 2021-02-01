@@ -26,7 +26,7 @@ class Weather {
 			</div>
 			<div class="weather__col">
 				<p class="weather__image">
-					<img src="http://openweathermap.org/img/w/${this.img_code}.png" alt="">
+					<img src="https://openweathermap.org/img/w/${this.img_code}.png" alt="">
 				</p>
 				<p class="temp">${parseInt(this.temperature)}℃</p>
 				<p class="description">Description: ${this.description}</p>
@@ -40,7 +40,7 @@ class Weather {
 
 let parent = document.querySelector('.weather');
 
-fetch('http://api.openweathermap.org/data/2.5/weather?q=kyiv&units=metric&APPID=5d066958a60d315387d9492393935c19')
+fetch('https://api.openweathermap.org/data/2.5/weather?q=kyiv&units=metric&APPID=5d066958a60d315387d9492393935c19')
 .then(response => response.json())
 .then(data => {
 	new Weather(
