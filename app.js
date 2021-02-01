@@ -69,7 +69,7 @@ btn.addEventListener('click',function() {
 
 	let cityName = inputValue.value;
 	if(cityName != '') {
-		let link = `http://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=5d066958a60d315387d9492393935c19`;
+		let link = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&units=metric&APPID=5d066958a60d315387d9492393935c19`;
 
 		fetch(link)
 		.then(response => response.json())
